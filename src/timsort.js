@@ -886,7 +886,7 @@ class TimSort {
       array[dest] = tmp[cursor2];
 
     } else if (length2 === 0) {
-      throw new Error('mergeHigh preconditions were not respected');
+      return;
 
     } else {
       customCursor = dest - (length2 - 1);
