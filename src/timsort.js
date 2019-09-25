@@ -702,7 +702,7 @@ class TimSort {
       array[dest + length2] = tmp[cursor1];
 
     } else if (length1 === 0) {
-      throw new Error('mergeLow preconditions were not respected');
+      return;
 
     } else {
       for (i = 0; i < length1; i++) {
